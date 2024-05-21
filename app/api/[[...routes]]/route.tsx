@@ -97,6 +97,9 @@ app.frame('/mint', neynarMiddleware,
       stayIdle(1000);
       return c.res({
         image: '/ETHBerlin-2024_Farcaster-Frames_11.png',
+        intents: [
+          <Button.Link href='https://app.phosphor.xyz/cd7ab25e-202f-4ff8-be94-35758d7322db/drops/8414354f-7e32-488f-8ded-0dacf0e1c4e9/51703770-8dcc-4bda-b9b4-1bb3d16b77b9/ce85b7bc-2c7f-4dd0-a931-0600999a7d0a'>NFT Page</Button.Link>,
+        ]
       })
     } catch (e: any) {
       console.log(e);
