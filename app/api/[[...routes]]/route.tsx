@@ -108,7 +108,7 @@ app.frame('/mint', neynarMiddleware,
     }
   })
 
-export const stayIdle = (delayInMs: number) =>
+const stayIdle = (delayInMs: number) =>
   new Promise((resolve) => setTimeout(resolve, delayInMs));
 
 devtools(app, { serveStatic })
